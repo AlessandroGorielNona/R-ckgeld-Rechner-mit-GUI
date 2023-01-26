@@ -1,6 +1,9 @@
 # Rückgeld-Rechner-mit-GUI
 Ein Simples Python Programm das Rückgeld mit einer Benutzeroberfläche berechnet.
-    Das erste importiert die Bibliothek Tkinter, die verwendet wird, um die GUI zu erstellen.
+Dokumentation des Codes:
+
+    Die erste Zeile importiert die Bibliothek Tkinter, die verwendet wird, um die GUI zu erstellen.
+    
     Der Code definiert eine Funktion "calculate_change()", die aufgerufen wird, wenn der Benutzer auf die Schaltfläche "Berechnen" klickt.
     Innerhalb der Funktion wird versucht, die Eingaben des Benutzers in den Eingabefeldern "amount_due" und "cash_received" in float-Werte umzuwandeln.
     Dann wird der Rückgeldbetrag berechnet, indem man cash_received von amount_due subtrahiert.
