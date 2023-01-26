@@ -8,9 +8,9 @@ def calculate_change():
         if change < 0:
             change_label.config(text="Warnung: Zu wenig bezahlt!", fg="red")
         else:
-            change_label.config(text=f"Wechseln: {change}", fg="black")
+            change_label.config(text=f"Rückgeld: {change}", fg="black")
     except ValueError:
-        change_label.config(text="Invalid input", fg="red")
+        change_label.config(text="Invalide eingabe", fg="red")
 
 root = tk.Tk()
 root.title("Rückgeld Rechner")
@@ -28,7 +28,7 @@ cash_received_entry.grid(row=1, column=1)
 calculate_button = tk.Button(root, text="Rechnen", command=calculate_change)
 calculate_button.grid(row=2, column=0, columnspan=2, pady=10)
 
-change_label = tk.Label(root, text="Change:")
+change_label = tk.Label(root, text="Rückgeld:")
 change_label.grid(row=3, column=0, columnspan=2)
 
 root.mainloop()
